@@ -18,6 +18,16 @@ const Scene = dynamic(() => import("@/components/Scene"), {
 const HeroSection = () => {
   const targetRef = useRef(null);
 
+  const DownloadCv = () => {
+    const pdfUrl = "/PDF/Nitesh_S_Resume.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Nitesh_S_Resume.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const styling = {
     // backgroundImage: `url('/images/banner.jpg')`,
     // width: "100%",
@@ -54,8 +64,11 @@ const HeroSection = () => {
           <div className=" text-lg md:text-2xl py-2 text-text-color mb-20">
             {Bio?.description}
           </div>
-          <div className="w-[200px] py-4 border-2 border-transparent bg-primary-color text-black text-center text-lg font-semibold cursor-pointer hover:border-primary-color hover:bg-black hover:text-white m-0 transition duration-600 ease-in-out sticky rounded-sm">
-            <Link href={"#"}>Download CV</Link>
+          <div
+            onClick={DownloadCv}
+            className="w-[200px] py-4 border-2 border-transparent bg-primary-color text-black text-center text-lg font-semibold cursor-pointer hover:border-primary-color hover:bg-black hover:text-white m-0 transition duration-600 ease-in-out sticky rounded-sm"
+          >
+            <span>Download CV</span>
             <MdOutlineFileDownload className="inline font-bold text-2xl ml-1 " />
           </div>
         </motion.div>
