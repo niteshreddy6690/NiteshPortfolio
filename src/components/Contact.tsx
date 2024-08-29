@@ -97,11 +97,17 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex text-sm md:text-lg  text-center my-4  text-text-color">
-              <Link href={""} className="">
+              <Link
+                href="https://www.instagram.com/nitesh_s_reddy/"
+                className=""
+              >
                 <FaInstagram className="h-8 w-8 inline" />
                 <span className="ml-1">Instagram</span>
               </Link>
-              <Link href={""} className="">
+              <Link
+                href="https://www.linkedin.com/in/nitesh-s-aa35b1136/"
+                className=""
+              >
                 <FaLinkedin className="h-8 w-8 inline" />
                 <span className="ml-1">Linked In</span>
               </Link>
