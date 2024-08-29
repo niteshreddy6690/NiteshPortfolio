@@ -28,28 +28,19 @@ const HeroSection = () => {
     document.body.removeChild(link);
   };
 
-  const styling = {
-    // backgroundImage: `url('/images/banner.jpg')`,
-    // width: "100%",
-    // height: "100%",
-    // backgroundSize: "cover",
-    // backgroundPosition: "center",
-  };
-
   return (
     <div
-      style={styling}
       id="about"
       className="flex justify-between items-center px-10 max-w-[1440px] h-[100vh]"
     >
       <motion.div>
         <motion.div className=" sm:w-[100%] md:w-[80%] lg:w-[50%]">
           <div className="">
-            <span className=" text-[28px] md:text-6xl  font-bold">
-              Hi ,I am Nitesh S
+            <span className=" text-5xl md:text-6xl lg:text-7xl  font-bold">
+              Nitesh S
             </span>
           </div>
-          <div className="flex text-xl md:text-4xl flex-row justify-start py-5 gap-5 text-left ">
+          <div className="flex text-xl md:text-4xl flex-row justify-start py-2 md:py-5  gap-2 md:gap-5 text-left ">
             I am a
             <span className="text-primary-color flex justify-start text-left m-0">
               <Typewriter

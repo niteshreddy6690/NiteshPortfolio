@@ -9,15 +9,16 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
   const form = useRef<any>(null);
   const [formData, setFormData] = useState({
-    from_email: "",
+    email: "",
     name: "",
     phone: "",
     subject: "",
-    body: "",
+    message: "",
   });
 
   const handleFormData = (
@@ -33,15 +34,16 @@ const Contact = () => {
     e.preventDefault();
     console.log(form.current);
     emailjs
-      .sendForm("service_famidlq", "template_y8rza2b", form.current, {
+      .sendForm("service_famidlq", "template_6jyl0id", form.current, {
         publicKey: "VTZswmsyR_NL8nOFl",
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Successfully sent email");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          toast.error("FAILED...", error.text);
+          // console.log("FAILED...", error.text);
         }
       );
   };
@@ -121,15 +123,15 @@ const Contact = () => {
               </Link>
             </div>
           </div>
-          <div className="max-w-[600px] px-2">
-            <h3 className="py-2 text-xl text-white">Email me</h3>
+          <div className="max-w-[600px] px-2 text-white">
+            <h3 className="py-2 text-xl ">Email me</h3>
             <form ref={form} onSubmit={sendEmail}>
               <input
                 type="email"
                 className="w-full outline-none bg-transparent border-b-2 py-6"
                 placeholder="Your Email"
-                name="from_email"
-                value={formData?.from_email || ""}
+                name="email"
+                value={formData?.email || ""}
                 onChange={(e) => handleFormData(e)}
               />
               <input
@@ -160,8 +162,8 @@ const Contact = () => {
                 className="bg-transparent  outline-none  w-full border-b-2 mt-6 h-28 max-h-[100px]"
                 placeholder="Your Message"
                 onChange={(e) => handleFormData(e)}
-                value={formData?.body || ""}
-                name="body"
+                value={formData?.message || ""}
+                name="message"
               ></textarea>
               <button
                 type="submit"

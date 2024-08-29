@@ -12,24 +12,21 @@ import {
   scrollSpy,
 } from "react-scroll";
 
-const GithubProfile = () => {
-  return <></>;
-};
 
 const Navbar = () => {
   return (
     <>
-      <div className="hidden h-20 w-full md:flex flex-1 items-center justify-center m-auto p-5 bg-black fixed top-0 left-0 z-[2]">
+      <div className="hidden h-20 w-full sm:flex flex-1 items-center justify-center m-auto p-5 bg-black fixed top-0 left-0 z-[2]">
         <div className="pl-5 w-[20%] md:w-[40%]">
           <DiCssdeck size="3rem" className="inline" />
           <span className=" sm:text-md lg:text-xl pl-2 text-primary-color hidden md:inline ">
             P
           </span>
-          <span className=" sm:text-md  lg:text-xl hidden md:inline">
+          <span className=" sm:text-md lg:text-xl hidden md:inline">
             ortfolio
           </span>
         </div>
-        <nav className="flex items-center w-[50%] md:w-[40%] justify-around  md:text-md lg:text-xl">
+        <nav className="flex items-center w-[70%] lg:w-[60%] xl:[50%] justify-around  md:text-md lg:text-xl">
           <LinkSr
             activeClass="active"
             to={"about"}

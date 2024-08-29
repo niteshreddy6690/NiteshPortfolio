@@ -18,7 +18,7 @@ const Skills = () => {
       id="skills"
       className="mt-20 min-h-[100vh] w-full flex justify-center flex-col items-center text-center flex-wrap max-w-[1440px]"
     >
-      <div className=" text-xl md:text-[112px] pt-4 font-bold text-primary-color mb-[10%]">
+      <div className=" text-6xl md:text-[112px] pt-4 font-bold text-primary-color mb-[10%]">
         Skills
       </div>
       <p className="text-text-color leading-2 max-w-[500px] py-4 text-lg">
