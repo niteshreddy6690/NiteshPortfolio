@@ -3,9 +3,50 @@
 @tailwind utilities;
 
 :root {
+  --primary-color: #c7d300; /*  #dcff50 */ /* 72b626 */
+  --secondary-color: #37c339;
+  --colorWhite: #fff;
+  --colorBlack: #0c0c08;
+  --colorBodyText: #d8d8d8;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --color-background: #090909;
+
+  /* linear-gradient(45deg, #ff82f3, #7b13ff 50%, #400d64) */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.typewriter {
+  text-transform: none !important;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0; /* Remove auto margin to align left */
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,16 +59,27 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  background: black;
+  padding-top: 80px;
+
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+html {
+  scroll-behavior: smooth;
 }
 
+/* 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} */
+.active {
+  color: #c7d300;
+  border-bottom: 0.1rem solid #c7d300;
 }
