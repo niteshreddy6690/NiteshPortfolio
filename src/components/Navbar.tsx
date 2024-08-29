@@ -1,16 +1,20 @@
 "use client";
 
 import React from "react";
-// import Link from "next/link";
+import Link from "next/link";
 import { DiCssdeck } from "react-icons/di";
 import {
-  Link,
+  Link as LinkSr,
   Button,
   Element,
   Events,
   animateScroll as scroll,
   scrollSpy,
 } from "react-scroll";
+
+const GithubProfile = () => {
+  return <></>;
+};
 
 const Navbar = () => {
   return (
@@ -26,7 +30,7 @@ const Navbar = () => {
           </span>
         </div>
         <nav className="flex items-center w-[50%] md:w-[40%] justify-around  md:text-md lg:text-xl">
-          <Link
+          <LinkSr
             activeClass="active"
             to={"about"}
             spy={true}
@@ -36,8 +40,8 @@ const Navbar = () => {
             className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent"
           >
             About
-          </Link>
-          <Link
+          </LinkSr>
+          <LinkSr
             activeClass="active"
             to={"skills"}
             spy={true}
@@ -47,8 +51,8 @@ const Navbar = () => {
             className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent"
           >
             Skills
-          </Link>
-          <Link
+          </LinkSr>
+          <LinkSr
             // to={"#projects"}
             activeClass="active"
             to={"projects"}
@@ -59,9 +63,8 @@ const Navbar = () => {
             className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent"
           >
             Projects
-          </Link>
-          <Link
-            // to={"#contact"}
+          </LinkSr>
+          <LinkSr
             activeClass="active"
             to={"contact"}
             spy={true}
@@ -71,15 +74,15 @@ const Navbar = () => {
             className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent"
           >
             Contact
+          </LinkSr>
+          <Link
+            href="https://github.com/niteshreddy6690"
+            className="flex items-center justify-end text-sm lg:text-base cursor-pointer text-primary-color rounded-full border-2 border-primary-color  px-2  md:px-6 py-2 hover:bg-primary-color hover:text-black transition duration-600 ease-in-out hover:border-black"
+            target="_blank"
+          >
+            Github Profile
           </Link>
         </nav>
-        <Link
-          to="https://github.com/niteshreddy6690"
-          className="flex items-center justify-end text-sm lg:text-base cursor-pointer text-primary-color rounded-full border-2 border-primary-color  px-2  md:px-6 py-2 hover:bg-primary-color hover:text-black transition duration-600 ease-in-out hover:border-black"
-          target="_blank"
-        >
-          Github Profile
-        </Link>
       </div>
     </>
   );
