@@ -9,7 +9,7 @@ Nitesh S Portfolio application is built by using Next.js 14 (app router),Framer 
 https://nitesh-portfolio-delta.vercel.app/
 ## Tech Stack
 
-React,TailwindCSS,Framer Motion,React Three Fiber,Three.js
+React ,Next.js,TailwindCSS,Framer Motion,React Three Fiber,Three.js
 
 
 
