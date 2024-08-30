@@ -39,12 +39,12 @@ const Contact = () => {
       .then(
         () => {
           toast.success("Successfully sent email", {
-            style: {
-              borderRadius: "5px",
-              border: "1px solid gray",
-              background: "#3a3a3a",
-              color: "#c7d300",
-            },
+            // style: {
+            //   borderRadius: "5px",
+            //   border: "1px solid gray",
+            //   background: "#f5f5f5",
+            //   color: "#c7d300",
+            // },
           });
         },
         (error) => {
