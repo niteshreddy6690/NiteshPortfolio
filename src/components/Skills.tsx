@@ -50,7 +50,7 @@ const Skills = () => {
                     height={40}
                     className=" w-6 h-6 lg:w-8 lg:h-8"
                   />
-                  <h3 className="text-sm md:text-xl">{skill?.name}</h3>
+                  <h2 className="text-sm md:text-xl">{skill?.name}</h2>
                 </div>
               ))}
             </div>

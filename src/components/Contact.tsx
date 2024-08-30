@@ -61,9 +61,9 @@ const Contact = () => {
     >
       <div>
         <h1 className=" text-5xl md:text-6xl font-semibold py-2">Contact</h1>
-        <h3 className="py-2 text-sm md:text-lg text-text-color">
+        <h2 className="py-2 text-sm md:text-lg text-text-color">
           Feel free to reach out to me for any questions or opportunities
-        </h3>
+        </h2>
         <div className=" flex flex-col lg:flex-row gap-20 md:m-4 lg:mt-20">
           <div className="mt-6">
             <h2 className=" text-2xl md:text-4xl font-semibold mb-2 text-white ">
