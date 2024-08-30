@@ -104,10 +104,10 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="flex text-sm md:text-lg  text-center my-4  text-text-color">
+            <div className="flex text-sm lg:text-lg  text-center my-4  text-text-color">
               <Link
                 href="https://www.instagram.com/nitesh_s_reddy/"
-                className="hover:text-primary-color"
+                className="hover:text-primary-color mx-2"
                 target="_blank"
               >
                 <FaInstagram className="h-8 w-8 inline" />
@@ -115,7 +115,7 @@ const Contact = () => {
               </Link>
               <Link
                 href="https://www.linkedin.com/in/nitesh-s-aa35b1136/"
-                className=" hover:text-primary-color"
+                className=" hover:text-primary-color mx-2"
                 target="_blank"
               >
                 <FaLinkedin className="h-8 w-8 inline" />
@@ -124,9 +124,9 @@ const Contact = () => {
               <Link
                 href="https://github.com/niteshreddy6690"
                 target="_blank"
-                className="hover:text-primary-color"
+                className="hover:text-primary-color mx-2"
               >
-                <FaGithub className="h-8 w-8 inline" />
+                <FaGithub className=" h-8 w-8  inline" />
                 <span className="ml-1">github</span>
               </Link>
             </div>
