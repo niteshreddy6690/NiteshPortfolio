@@ -72,7 +72,7 @@ const Contact = () => {
             <p className=" text-sm md:text-lg text-text-color  ">
               you can reach out to me through below means
             </p>
-            <div className="mt-10 text-text-color">
+            <div className="mt-10 text-text-color p-2">
               <div className="flex justify-start items-center py-2">
                 <div className=" w-16 h-16 rounded-full border-2 border-slate-300 hover:border-primary-color flex items-center justify-center">
                   <MdOutlineMailOutline className="text-3xl" />
