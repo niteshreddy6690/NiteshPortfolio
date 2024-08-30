@@ -31,10 +31,10 @@ const HeroSection = () => {
   return (
     <div
       id="about"
-      className="flex justify-between items-center px-10 max-w-[1440px] h-[100vh]"
+      className="flex justify-between items-center px-10 max-w-[1440px] h-[100vh] mx-auto"
     >
       <motion.div>
-        <motion.div className=" sm:w-[100%] md:w-[80%] lg:w-[50%]">
+        <motion.div className=" sm:w-[100%] md:w-[80%] lg:w-[50%] mx-auto">
           <div className="">
             <span className=" text-5xl md:text-6xl lg:text-7xl  font-bold">
               Nitesh S

@@ -16,7 +16,7 @@ const Skills = () => {
       ref={targetRef}
       style={{ opacity: opacity }}
       id="skills"
-      className="mt-20 min-h-[100vh] w-full flex justify-center flex-col items-center text-center flex-wrap max-w-[1440px]"
+      className="mt-20 min-h-[100vh] w-full flex justify-center flex-col items-center text-center flex-wrap max-w-[1440px] mx-auto "
     >
       <div className=" text-6xl md:text-[112px] pt-4 font-bold text-primary-color mb-[10%]">
         Skills
@@ -31,7 +31,7 @@ const Skills = () => {
       >
         {skills.map((item, i) => (
           <div
-            className="border-[1px] border-primary-color max-w-[100%] w-[100%] md:w-[48%] lg:w-[40%]  p-2 rounded-xl mt-16"
+            className="border-[1px] border-primary-color max-w-[100%] w-[100%] md:w-[48%] lg:w-[40%]  p-2 rounded-xl mt-16 mx-auto"
             key={i}
           >
             <h1 className=" text-xl md:text-2xl lg:text-4xl mb-5 py-2 ">

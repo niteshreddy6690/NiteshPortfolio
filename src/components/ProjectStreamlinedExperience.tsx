@@ -28,7 +28,7 @@ export const ProjectStreamlinedExperience = () => {
 
   return (
     <motion.section
-      id="projects"
+  
       style={
         {
           opacity: opacitySection,

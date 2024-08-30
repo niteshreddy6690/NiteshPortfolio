@@ -30,22 +30,28 @@ const Contact = () => {
     }));
   };
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
-    console.log(form.current);
     emailjs
-      .sendForm("service_famidlq", "template_6jyl0id", form.current, {
+      .sendForm("service_famidlq", "template_6jyl0id", e.target, {
         publicKey: "VTZswmsyR_NL8nOFl",
       })
       .then(
         () => {
-          toast.success("Successfully sent email");
+          toast.success("Successfully sent email", {
+            style: {
+              borderRadius: "5px",
+              border: "1px solid gray",
+              background: "#3a3a3a",
+              color: "#c7d300",
+            },
+          });
         },
         (error) => {
           toast.error("FAILED...", error.text);
-          // console.log("FAILED...", error.text);
         }
       );
+    e.target.reset();
   };
 
   return (
@@ -101,14 +107,16 @@ const Contact = () => {
             <div className="flex text-sm md:text-lg  text-center my-4  text-text-color">
               <Link
                 href="https://www.instagram.com/nitesh_s_reddy/"
-                className=""
+                className="hover:text-primary-color"
+                target="_blank"
               >
                 <FaInstagram className="h-8 w-8 inline" />
                 <span className="ml-1">Instagram</span>
               </Link>
               <Link
                 href="https://www.linkedin.com/in/nitesh-s-aa35b1136/"
-                className=""
+                className=" hover:text-primary-color"
+                target="_blank"
               >
                 <FaLinkedin className="h-8 w-8 inline" />
                 <span className="ml-1">Linked In</span>
@@ -116,7 +124,7 @@ const Contact = () => {
               <Link
                 href="https://github.com/niteshreddy6690"
                 target="_blank"
-                className=""
+                className="hover:text-primary-color"
               >
                 <FaGithub className="h-8 w-8 inline" />
                 <span className="ml-1">github</span>

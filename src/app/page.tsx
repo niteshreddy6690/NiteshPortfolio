@@ -19,7 +19,7 @@ export default function Home() {
       <Experience />
       <HeroSection />
       <Skills />
-      <ProjectStreamlinedExperience />
+      {/* <ProjectStreamlinedExperience /> */}
       <Projects />
       <Contact />
     </main>

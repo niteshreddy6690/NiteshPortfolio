@@ -5,7 +5,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import MntraProject from "../../public/images/Mntra-project.png";
 import MusicPlayer from "../../public/images/Music-player.png";
-import { MdDescription } from "react-icons/md";
+import { ProjectStreamlinedExperience } from "./ProjectStreamlinedExperience";
+
 const Projects = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -201,7 +202,8 @@ const Projects = () => {
     );
   };
   return (
-    <section className="w-full  my-[50px]">
+    <section className="w-full h-full" id="projects">
+      <ProjectStreamlinedExperience />
       <div className="flex flex-col gap-[20vh] my-40 w-full h-full mx-0">
         {projects?.map((project, i) => (
           <ProjectComponent project={project} i={i} key={i} />

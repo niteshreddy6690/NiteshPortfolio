@@ -12,7 +12,6 @@ import {
   scrollSpy,
 } from "react-scroll";
 
-
 const Navbar = () => {
   return (
     <>
@@ -34,7 +33,7 @@ const Navbar = () => {
             smooth={true}
             offset={-100}
             duration={500}
-            className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent"
+            className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent hover:border-b-[0.1rem] hover:border-primary-color"
           >
             About
           </LinkSr>
@@ -45,7 +44,7 @@ const Navbar = () => {
             smooth={true}
             offset={-50}
             duration={500}
-            className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent"
+            className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent hover:border-b-[0.1rem] hover:border-primary-color"
           >
             Skills
           </LinkSr>
@@ -57,7 +56,7 @@ const Navbar = () => {
             smooth={true}
             offset={-500}
             duration={500}
-            className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent"
+            className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent hover:border-b-[0.1rem]  hover:border-primary-color"
           >
             Projects
           </LinkSr>
@@ -66,9 +65,9 @@ const Navbar = () => {
             to={"contact"}
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-300}
             duration={500}
-            className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent"
+            className="hover:text-primary-color cursor-pointer border-b-[0.1rem] border-transparent hover:border-b-[0.1rem]  hover:border-primary-color"
           >
             Contact
           </LinkSr>
