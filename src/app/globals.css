@@ -58,7 +58,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--colorWhite);
   background: black;
   padding-top: 80px;
   margin: 0;
