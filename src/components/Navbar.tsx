@@ -83,7 +83,7 @@ const Navbar = () => {
           </Link>
         </nav>
 
-        <div className="pr-5 flex items-center justify-end text-primary-color border border-colorBodyText rounded-md p-2">
+        <div className="pr-5 flex items-center justify-end text-primary-color border border-primary-color rounded-md p-2">
           <select
             name="theme"
             defaultValue={useTheme().theme}
@@ -91,11 +91,7 @@ const Navbar = () => {
             className="bg-transparent border-none outline-none cursor-pointer text-inherit"
           >
             {[...getAllThemes()].map((theme) => (
-              <option
-                key={theme}
-                value={theme}
-                className="text-black dark:text-white"
-              >
+              <option key={theme} value={theme}>
                 {theme
                   .replace("-", " ")
                   .replace(/\b\w/g, (c) => c.toUpperCase())}

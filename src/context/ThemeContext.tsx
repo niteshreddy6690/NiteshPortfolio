@@ -37,7 +37,6 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   }, [theme]);
 
   const toggleTheme = (newTheme: Theme) => {
-    console.log("Toggling theme to:", newTheme);
     setTheme(newTheme);
   };
 
@@ -58,4 +57,3 @@ const useTheme = () => {
 
 export { ThemeProvider, useTheme };
 export default ThemeContext;
- 

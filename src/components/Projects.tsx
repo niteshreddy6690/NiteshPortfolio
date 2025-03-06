@@ -161,7 +161,7 @@ const Projects = () => {
         >
           <motion.h1
             style={{ y: y } as any}
-            className={` text-[4rem] md:text-[8rem] font-bold text-transparent [-webkit-text-stroke:1px_var(--colorWhite)] absolute  ${
+            className={` text-[4rem] md:text-[8rem] font-bold text-transparent [-webkit-text-stroke:1px_var(--primary-color)] absolute  ${
               (i + 1) % 2 != 0 ? "right-0" : "left-0"
             } `}
           >
@@ -179,7 +179,7 @@ const Projects = () => {
           </Link>
 
           <div className=" mt-2 md:mt-5 text-white-color">
-            <span className=" text-2xl md:text-[3rem] relative mt-10 font-bold   md:text-transparent md:[-webkit-text-stroke:1px_var(--colorWhite)] ">
+            <span className=" text-2xl md:text-[3rem] relative mt-10 font-bold   md:text-transparent md:[-webkit-text-stroke:1px_var(--primary-color)] ">
               {project?.title}
             </span>
             <p className=" text-[12px] md:text-xl text-text-color mt-2">

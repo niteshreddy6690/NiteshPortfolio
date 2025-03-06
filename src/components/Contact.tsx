@@ -136,7 +136,7 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <input
                 type="email"
-                className="w-full outline-none bg-transparent border-b-2 py-6"
+                className="w-full outline-none bg-transparent border-b-2 py-6 border-primary-color"
                 placeholder="Your Email"
                 name="email"
                 value={formData?.email || ""}
@@ -144,7 +144,7 @@ const Contact = () => {
               />
               <input
                 type="text"
-                className="  w-full md:w-[48%] outline-none bg-transparent border-b-2 py-6 mt-2"
+                className="  w-full md:w-[48%] outline-none bg-transparent border-b-2 py-6 mt-2 border-primary-color"
                 placeholder="Your Name"
                 onChange={(e) => handleFormData(e)}
                 value={formData?.name || ""}
@@ -152,7 +152,7 @@ const Contact = () => {
               />
               <input
                 type="tel"
-                className=" w-full md:w-[48%] md:ml-4 outline-none bg-transparent border-b-2 py-6 mt-2"
+                className=" w-full md:w-[48%] md:ml-4 outline-none bg-transparent border-b-2 py-6 mt-2 border-primary-color"
                 placeholder="Phone Number"
                 onChange={(e) => handleFormData(e)}
                 value={formData?.phone || ""}
@@ -160,14 +160,14 @@ const Contact = () => {
               />
               <input
                 type="text"
-                className="w-full outline-none bg-transparent border-b-2 py-6 mt-2"
+                className="w-full outline-none bg-transparent border-b-2 py-6 mt-2 border-primary-color"
                 placeholder="Subject"
                 onChange={(e) => handleFormData(e)}
                 value={formData?.subject || ""}
                 name="subject"
               />
               <textarea
-                className="bg-transparent  outline-none  w-full border-b-2 mt-6 h-28 max-h-[100px]"
+                className="bg-transparent  outline-none  w-full border-b-2 mt-6 h-28 max-h-[100px] border-primary-color"
                 placeholder="Your Message"
                 onChange={(e) => handleFormData(e)}
                 value={formData?.message || ""}
@@ -175,7 +175,7 @@ const Contact = () => {
               ></textarea>
               <button
                 type="submit"
-                className="p-4 bg-primary-color text-black text-xl w-60 my-10 rounded-lg"
+                className="p-4 bg-primary-color text-black text-xl w-60 my-10 rounded-lg border-primary-color"
               >
                 Send
               </button>
