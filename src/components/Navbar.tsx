@@ -11,8 +11,11 @@ import {
   animateScroll as scroll,
   scrollSpy,
 } from "react-scroll";
+import { getAllThemes, useTheme } from "@/context/ThemeContext";
+import { Theme } from "../context/ThemeContext";
 
 const Navbar = () => {
+  const { toggleTheme } = useTheme();
   return (
     <>
       <div className="hidden h-20 w-full sm:flex flex-1 items-center justify-center m-auto p-5 bg-black fixed top-0 left-0 z-[2]">
@@ -79,6 +82,27 @@ const Navbar = () => {
             Github Profile
           </Link>
         </nav>
+
+        <div className="pr-5 flex items-center justify-end text-primary-color border border-colorBodyText rounded-md p-2">
+          <select
+            name="theme"
+            defaultValue={useTheme().theme}
+            onChange={(e) => toggleTheme(e.target.value as Theme)}
+            className="bg-transparent border-none outline-none cursor-pointer text-inherit"
+          >
+            {[...getAllThemes()].map((theme) => (
+              <option
+                key={theme}
+                value={theme}
+                className="text-black dark:text-white"
+              >
+                {theme
+                  .replace("-", " ")
+                  .replace(/\b\w/g, (c) => c.toUpperCase())}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
     </>
   );

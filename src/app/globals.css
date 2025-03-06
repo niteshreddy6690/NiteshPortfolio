@@ -15,6 +15,44 @@
 
   /* linear-gradient(45deg, #ff82f3, #7b13ff 50%, #400d64) */
 }
+.orange {
+  --primary-color: #fba31f; /* Adjusted for dark mode */
+  --secondary-color: #37c339;
+  --colorWhite: #d8d8d8;
+  --colorBlack: #f5f5f5;
+  --colorBodyText: #a1a1a1;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 25, 25, 25;
+  --color-background: #090909;
+}
+
+.neon-red {
+  --primary-color: #ff6f61; /* Coral Red */
+  --secondary-color: #4a90e2; /* Soft Blue */
+  --colorWhite: #ffffff; /* Pure White */
+  --colorBlack: #121212; /* Almost Black */
+  --colorBodyText: #b0bec5; /* Soft Grey */
+  --foreground-rgb: 255, 255, 255; /* White */
+  --background-start-rgb: 30, 30, 30; /* Dark Grey */
+  --background-end-rgb: 45, 45, 45; /* Slightly Lighter Grey */
+  --color-background: #1e1e1e; /* Dark Grey */
+
+  /* Gradient Example: Neon Glow */
+  /* linear-gradient(45deg, #ff0099, #493240 50%, #2c3e50) */
+}
+
+.neon-green {
+  --primary-color: #32ff7e; /* Bright neon green */
+  --secondary-color: #3ae374;
+  --colorWhite: #eaffea; /* Light greenish white */
+  --colorBlack: #0c0c08;
+  --colorBodyText: #c5dec5; /* Light pastel green */
+  --foreground-rgb: 0, 255, 0;
+  --background-start-rgb: 0, 30, 0;
+  --background-end-rgb: 0, 100, 0;
+  --color-background: #002a00; /* Dark green */
+}
 
 * {
   box-sizing: border-box;
@@ -80,6 +118,6 @@ html {
   }
 } */
 .active {
-  color: #c7d300;
-  border-bottom: 0.1rem solid #c7d300;
+  color: var(--primary-color);
+  border-bottom: 0.1rem solid var(--primary-color);
 }

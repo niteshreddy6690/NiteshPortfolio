@@ -178,7 +178,7 @@ const Projects = () => {
             </motion.div>
           </Link>
 
-          <div className=" mt-2 md:mt-5 text-white">
+          <div className=" mt-2 md:mt-5 text-white-color">
             <span className=" text-2xl md:text-[3rem] relative mt-10 font-bold   md:text-transparent md:[-webkit-text-stroke:1px_var(--colorWhite)] ">
               {project?.title}
             </span>

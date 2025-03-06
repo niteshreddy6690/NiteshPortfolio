@@ -7,6 +7,7 @@ import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import { ProjectStreamlinedExperience } from "@/components/ProjectStreamlinedExperience";
 import dynamic from "next/dynamic";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const Scene = dynamic(() => import("@/components/Scene"), {
   ssr: false,
@@ -14,14 +15,16 @@ const Scene = dynamic(() => import("@/components/Scene"), {
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <Experience />
-      <HeroSection />
-      <Skills />
-      {/* <ProjectStreamlinedExperience /> */}
-      <Projects />
-      <Contact />
-    </main>
+    <ThemeProvider>
+      <main>
+        <Navbar />
+        <Experience />
+        <HeroSection />
+        <Skills />
+        {/* <ProjectStreamlinedExperience /> */}
+        <Projects />
+        <Contact />
+      </main>
+    </ThemeProvider>
   );
 }
